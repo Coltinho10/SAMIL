@@ -1,5 +1,5 @@
 #!/bin/bash
-
+# adding comment to push to repo 
 ## Should run [. .setup.sh] at root directory
 export ROOT_DIR=$PWD
 echo "Root Dir: $ROOT_DIR"
