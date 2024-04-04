@@ -718,7 +718,7 @@ if __name__=='__main__':
     if torch.cuda.is_available():
         cuda = torch.cuda.is_available()
     #elif torch.metal.is_available():
-    #    metal = torch.metal.is_avilable()
+        #metal = torch.metal.is_avilable()
     elif torch.backends.mps.is_available():
         mps_device = torch.backends.mps.is_available()
         # x = torch.ones(1, device=mps_device)
