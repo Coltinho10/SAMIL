@@ -1,6 +1,6 @@
 #!/bin/bash
 
-## Should run [. .setup.sh] at root directory
+## Should run [. .run.sh] at root directory
 export ROOT_DIR=$PWD
 echo "Root Dir: $ROOT_DIR"
 
@@ -24,10 +24,7 @@ export DATA_INFO_DIR="$ROOT_DIR/data_info/"
 export DATA_DIR="$ROOT_DIR/view_and_diagnosis_labeled_set/"
 export CHECKPOINT_DIR="$ROOT_DIR/model_checkpoints/"
 
-<<<<<<< HEAD:setup.sh
 echo "Data Info Directory: $DATA_INFO_DIR"
 echo "Data Directory: $DATA_DIR"
 echo "Checkpoint Directory: $CHECKPOINT_DIR"
-=======
 bash runs/SAMIL/launch_experiment.sh run_here
->>>>>>> 984aaf210e52a211b11651d70951ed8fee4381da:run.sh
