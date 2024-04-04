@@ -6,6 +6,7 @@ import random
 import shutil
 import time
 import json
+from torch.cuda import is_available
 from tqdm import tqdm
 
 import pandas as pd
@@ -710,14 +711,26 @@ def main(args, brief_summary):
 if __name__=='__main__':
     
     args = parser.parse_args()
-    
-    cuda = torch.cuda.is_available()
-    
+    print('============')
+    print(torch.backends.mps.is_available())
+    print('============')
+    cuda = None
+    if torch.cuda.is_available():
+        cuda = torch.cuda.is_available()
+    #elif torch.metal.is_available():
+    #    metal = torch.metal.is_avilable()
+    elif torch.backends.mps.is_available():
+        mps_device = torch.backends.mps.is_available()
+        # x = torch.ones(1, device=mps_device)
     if cuda:
         print('cuda available')
         device = torch.device('cuda')
         args.device = device
         torch.backends.cudnn.benchmark = True
+    elif mps_device:
+        print('Metal GPU available')
+        device = torch.device('mps')
+        args.device = device
     else:
         raise ValueError('Not Using GPU?')
         
