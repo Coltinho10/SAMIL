@@ -1,5 +1,5 @@
 # Google Colab
-Here is a [link](https://colab.research.google.com/drive/1dohxqPx9orWh2uws8TK9KYgeYbOaOI2R) to our notebook. An `@illinois.edu` email
+Here is a [link](https://colab.research.google.com/drive/1dohxqPx9orWh2uws8TK9KYgeYbOaOI2R) to our notebook, and here is a [link](https://youtu.be/VhxWvO7fJ5o) to our presentation. An `@illinois.edu` email
 is required to access the notebook along with the Google Drive data. The notebook and additional code can also be found in the notebook folder in 
 this repo.
 
